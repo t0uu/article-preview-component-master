@@ -146,6 +146,116 @@
   height: 0.8rem;
 }
 
+@media (min-width: 1366px) {
+  body {
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70%;
+    height: 54vh;
+  }
+  article .containerImg {
+    width: 74%;
+  }
+  article .containerImg .Drawer {
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+  }
+  article .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  article .container h1 {
+    font-size: 29px;
+    letter-spacing: 2px;
+    line-height: 2rem;
+  }
+  article .container p {
+    font-size: 17px;
+  }
+  article .containerAvatar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  article .containerAvatar .RRSS {
+    margin-left: 15rem;
+  }
+  article .containerAvatar .RRSS .btnShare {
+    height: 2rem;
+    width: 2rem;
+  }
+  article .containerAvatar .RRSS .btnShare .share {
+    width: 1rem;
+    height: 1rem;
+  }
+  .ShareRSSS {
+    width: auto;
+    bottom: 16.8rem;
+    right: 11.5rem;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ShareRSSS span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--Desaturated-Dark-Blue);
+  }
+  .ShareRSSS i {
+    margin-left: 1rem;
+    margin-right: 0px;
+    letter-spacing: 10px;
+  }
+  .ShareRSSS .btnFond {
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    top: 4.4rem;
+    right: 6.3rem;
+  }
+  .ShareRSSS .btnFond .shareOut {
+    width: 1rem;
+    height: 1rem;
+  }
+  .ShareRSSS .triangle {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--Very-Dark-Grayish-Blue);
+    top: 3.5rem;
+    right: 7rem;
+  }
+}
+
 @media (min-width: 1440px) {
   body {
     height: 100vh;
