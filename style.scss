@@ -1,0 +1,227 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+// font-family: 'Manrope', sans-serif;
+
+:root{
+    // ## Colors
+--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+*{
+    padding: 0;
+    margin: 0;
+}
+@media (min-width:375px){
+    
+    body{
+        background-color: var(--Light-Grayish-Blue);
+        font-size: 13px;
+        font-family: 'Manrope', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    article{
+        border-radius: 20px;
+        width: 90%;
+        height: 91vh;
+        margin: 1rem;
+        background-color: white; 
+        .containerImg{
+            width:100%;
+            .Drawer{
+                border-radius: 20px 20px 0px 0px;
+                width: 100%;
+            }
+        }
+        .containerAvatar{
+            display: flex;
+            margin: 1rem;
+            align-items: center;
+            .avatar{
+                width: 40px;
+                height:40px;
+                border-radius: 20px;
+
+            }
+            .RRSS{
+                display: flex;
+                align-items: center;
+                margin-left: 4rem;
+                .btnShare{
+                    background-color:var(--Light-Grayish-Blue);
+                    border: none;
+                    border-radius: 20px;
+                    height: 2rem;
+                    width: 2rem;
+                .share{
+                    width: 1rem;
+                    height:1rem;
+                }
+            }                
+            }
+    .TextAvatar{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        span{
+            color:var(--Very-Dark-Grayish-Blue);
+            font-weight: 700;
+        }
+        small{
+            color:var(--Grayish-Blue);
+        }
+    }
+    
+        }
+        h1{
+            color:var(--Very-Dark-Grayish-Blue);
+            font-weight: 700;
+            margin: 1rem;
+        }
+        p{
+            color:var(--Desaturated-Dark-Blue);
+            margin: 1rem;
+            font-weight: 500;
+            line-height: 1.2rem;
+        }
+    }
+    
+}
+.ShareRSSS{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    width: 82%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0.9rem;
+    bottom: 30px;
+    position: absolute;
+    display: none;
+    justify-content:space-around;
+    span{
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color:var(--Desaturated-Dark-Blue)
+    }
+        i{
+            margin-right: 1rem;
+            color: white;
+            font-size: 20px;
+        }
+    .btnFond{
+        background-color:var(--Grayish-Blue);
+        border:none;
+        border-radius: 20px;
+        height:1.5rem;
+        width: 1.5rem;
+        cursor: pointer;
+        .shareOut{
+                    width: 0.8rem;
+                    height:0.8rem;
+                }
+    }
+}
+
+@media (min-width: 1440px){
+    body{
+        height: 100vh;
+        align-items: center;
+    }
+    article{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 54vh;
+        
+        .containerImg{
+            width: 74%;
+            .Drawer{
+                width: 100%;
+                border-radius: 20px 0px 0px 20px;
+            }
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-self: center;
+            h1{
+            font-size: 29px;
+            letter-spacing: 2px;
+            line-height: 2rem;
+            }
+            p{
+                font-size: 17px;
+            }
+
+        }
+        .containerAvatar{
+            display: flex;
+            margin: 1rem;
+            align-items: center;
+            .RRSS{
+                margin-left: 15rem;
+                .btnShare{
+                    height: 2rem;
+                    width: 2rem;
+                    .share{
+                        width: 1rem;
+                        height:1rem;
+                    }
+                }                
+        }
+
+        
+    }
+}
+    .ShareRSSS{
+        width: auto;
+        bottom: 16rem;
+        right: 14rem;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        span{
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color:var(--Desaturated-Dark-Blue)
+        }
+            i{
+                margin-left: 1rem;
+               margin-right: 0px;
+               letter-spacing: 10px;
+            }
+        .btnFond{
+            height:2rem;
+            width: 2rem;
+            position: relative;
+            top: 4.4rem;
+            right: 6.3rem;
+            .shareOut{
+                        width: 1rem;
+                        height:1rem;
+                    }
+        }
+        .triangle{
+            position: absolute;
+            height: 0px;
+            width: 0px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid var(--Very-Dark-Grayish-Blue);
+            top: 3.5rem;
+            right:7rem;
+        }
+}
+}
